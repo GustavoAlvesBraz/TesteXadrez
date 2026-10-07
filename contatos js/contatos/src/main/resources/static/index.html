@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agenda</title>
+</head>
+
+<body>
+
+<h1> Adicionar Contatos</h1>
+
+<form id = "formContato">
+    <input type="text" id="nome" placeholder="Nome do contato" required>
+    <input type="text" id="numero" placeholder="Número/Telefone" required>
+    <button type="submit">Salvar Contato</button>
+</form>
+
+<hr>
+
+<!-- TABELA PARA LISTAR OS CONTATOS -->
+<h2>Meus Contatos</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Número</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody id="tabelaContatos">
+    <!-- O JavaScript vai injetar as linhas aqui dentro dinamicamente -->
+    </tbody>
+</table>
+
+<!-- VÍNCULO COM O SEU ARQUIVO JAVASCRIPT -->
+<script src="/js/main.js"></script>
+</body>
+</html>
