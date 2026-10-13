@@ -1,26 +1,20 @@
 package com.abertura.xadrez.service;
 
 import com.abertura.xadrez.model.Dados;
+import org.springframework.stereotype.Service;
 
-public class Abertura extends Dados {
+@Service
+public class Abertura {
 
-    public static String ruyLopes;
-    public static String italiana;
-
-
-       public String recomendo(Dados indico) {
-           if (indico.isPosicional()
-                   && indico.isFinais()
-                   && (indico.isMilOitocentos() || indico.isDoisMil() || indico.isMaisDoisMil())
-                   && (indico.isConvencional() || indico.isRapido())
-               && indico.getTempo() >= 3
-                && indico.getMemoria() >= 3)
-           {
+    public String recomendo(Dados d) {
+        if (d.isPosicional()
+                && d.isFinais()
+                && (d.isMilOitocentos() || d.isDoisMil() || d.isMaisDoisMil())
+                && (d.isConvencional() || d.isRapido())
+                && d.getTempo() >= 3
+                && d.getMemoria() >= 3) {
             return "Ruy Lopez";
-       }
-
-           return "Sistema London";
-       }
-
+        }
+        return "Sistema London";
     }
-
+}

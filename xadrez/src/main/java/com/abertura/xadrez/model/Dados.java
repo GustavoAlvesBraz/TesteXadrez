@@ -1,8 +1,8 @@
 package com.abertura.xadrez.model;
 
-import jakarta.persistence.Entity;
 
-@Entity
+
+
 public class Dados {
     private String forca;
     private boolean menosMil= false;
@@ -78,6 +78,8 @@ public class Dados {
 
     public void setPreferencia(String preferencia) {
         this.preferencia = preferencia;
+        this.meioJogo = "meiojogo".equals(preferencia);
+        this.finais = "finais".equals(preferencia);
     }
 
     public void forcaEscolhida(){

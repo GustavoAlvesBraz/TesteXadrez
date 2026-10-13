@@ -11,18 +11,18 @@
 <p>Você prefere partidas que tendem a ir pra finais/jogar posições de finais ou posições de meio jogo?</p>
 <br>
 <label for="meiojogo">Meio-Jogo</label>
-<input id="meiojogo" type="radio" name="preferencia">
+<input id="meiojogo" type="radio" name="preferencia" value="meiojogo">
 
 <div>
 <label for="final">Finais</label>
-<input id="final" type="radio" name="preferencia">
+<input id="final" type="radio" name="preferencia" value="final">
 </div>
 <hr>
 <h2>Agora escolha qual modalidade você joga mais</h2>
 <hr>
 <div>
     <label for="relampago">Relâmpago</label>
-    <input id="relampago" type="radio" name="modalidade" value="'">
+    <input id="relampago" type="radio" name="modalidade" value="1">
 </div>
 <div>
     <label for="rapido">Rápido</label>
@@ -33,6 +33,7 @@
     <input id="convencional" type="radio" name="modalidade" value="3">
 </div>
 <button id="enviar">Enviar</button>
-
+<p id="resultado"></p>
+<script src="script.js"></script>
 </body>
 </html>
